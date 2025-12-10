@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Kontak - Fortis Welding</title>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <style>
+        /* Warna custom Fortis */
+        .text-fortis-yellow {
+            color: #FBBF24;
+        }
+
+        .text-fortis-white {
+            color: #F9FAFB;
+        }
+
+        .text-fortis-dark {
+            color: #1F2937;
+        }
+
+        .bg-fortis-black {
+            background-color: #0F0F0F;
+        }
+
+        .bg-fortis-dark {
+            background-color: #1F2937;
+        }
+
+        .bg-fortis-yellow {
+            background-color: #FBBF24;
+        }
+    </style>
+</head>
+
+<body class="bg-fortis-black text-fortis-white min-h-screen flex flex-col">
+
+    <!-- NAVBAR -->
+    <header class="bg-fortis-black shadow z-50">
+        <div class="container mx-auto px-5 py-5 flex justify-between items-center">
+
+            <!-- LOGO -->
+            <div class="flex items-center gap-3">
+                <img src="/img/brand/logo-horizon-white.png" alt="SAUDARA GEOTEKNIK" class="w-[150px] h-auto">
+            </div>
+
+            <!-- DESKTOP NAV -->
+            <nav class="hidden md:flex items-center gap-6 text-sm font-medium">
+                <a href="/" class="text-fortis-white hover:text-fortis-yellow">Beranda</a>
+                <a href="/tentang/" class="text-fortis-white hover:text-fortis-yellow">Tentang</a>
+                <a href="/layanan/" class="text-fortis-white hover:text-fortis-yellow">Layanan</a>
+                <a href="/kontak/" class="text-fortis-yellow">Kontak</a>
+            </nav>
+
+            <!-- MOBILE BUTTON -->
+            <button id="menu-btn" aria-label="Buka menu navigasi"
+                class="md:hidden flex items-center justify-center w-10 h-10 rounded text-fortis-white hover:text-fortis-yellow">
+                <i data-lucide="menu" class="w-6 h-6"></i>
+            </button>
+        </div>
+
+        <!-- MOBILE MENU -->
+        <div id="mobile-menu" class="hidden md:hidden bg-fortis-black ">
+            <nav class="flex flex-col gap-2 px-6 py-4 text-sm font-medium">
+                <a href="/" class="p-2 rounded text-fortis-white hover:text-fortis-yellow">Beranda</a>
+                <a href="/tentang/" class="p-2 rounded text-fortis-white hover:text-fortis-yellow">Tentang Kami</a>
+                <a href="/layanan/" class="p-2 rounded text-fortis-white hover:text-fortis-yellow">Layanan</a>
+                <a href="/kontak/" class="p-2 rounded text-fortis-yellow">Kontak</a>
+
+            </nav>
+        </div>
+    </header>
+    <!-- END NAVBAR -->
+
+    <!-- Hero / Intro -->
+    <section class="bg-fortis-black py-20">
+        <div class="container mx-auto px-5 text-center">
+            <h1 class="text-5xl font-extrabold text-fortis-yellow mb-6">Kontak Kami</h1>
+            <p class="text-fortis-white text-lg max-w-2xl mx-auto leading-relaxed">
+                Kami siap membantu Anda. Silakan hubungi kami melalui form di bawah atau informasi kontak langsung untuk
+                konsultasi dan penawaran layanan pengelasan profesional.
+            </p>
+        </div>
+    </section>
+
+    <!-- Contact Info -->
+    <section class="bg-fortis-dark py-20">
+        <div class="container mx-auto px-5 grid md:grid-cols-3 gap-10 text-fortis-white">
+
+            <!-- Alamat -->
+            <div class="flex flex-col items-center text-center">
+                <i data-lucide="map-pin" class="w-10 h-10 text-fortis-yellow mb-4"></i>
+                <h3 class="text-2xl font-bold mb-2 text-fortis-yellow">Alamat</h3>
+                <p>Jl. Industri No. 12, Kawasan Teknik, Jakarta</p>
+            </div>
+
+            <!-- Telepon -->
+            <div class="flex flex-col items-center text-center">
+                <i data-lucide="phone" class="w-10 h-10 text-fortis-yellow mb-4"></i>
+                <h3 class="text-2xl font-bold mb-2 text-fortis-yellow">Telepon</h3>
+                <p>+62 123 456 789</p>
+            </div>
+
+            <!-- Email -->
+            <div class="flex flex-col items-center text-center">
+                <i data-lucide="mail" class="w-10 h-10 text-fortis-yellow mb-4"></i>
+                <h3 class="text-2xl font-bold mb-2 text-fortis-yellow">Email</h3>
+                <p>info@fortiswelding.com</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="bg-fortis-black py-20">
+        <div class="container mx-auto px-5 max-w-3xl">
+            <h2 class="text-4xl font-extrabold text-fortis-yellow mb-10 text-center">Form Kontak</h2>
+
+            <form class="grid gap-6">
+
+                <div>
+                    <label class="block mb-2 text-fortis-white font-semibold" for="name">Nama</label>
+                    <input
+                        class="w-full px-4 py-3 rounded-lg bg-fortis-dark text-fortis-white border border-gray-700 focus:outline-none focus:border-fortis-yellow"
+                        type="text" id="name" placeholder="Nama lengkap" required>
+                </div>
+
+                <div>
+                    <label class="block mb-2 text-fortis-white font-semibold" for="email">Email</label>
+                    <input
+                        class="w-full px-4 py-3 rounded-lg bg-fortis-dark text-fortis-white border border-gray-700 focus:outline-none focus:border-fortis-yellow"
+                        type="email" id="email" placeholder="email@domain.com" required>
+                </div>
+
+                <div>
+                    <label class="block mb-2 text-fortis-white font-semibold" for="subject">Subjek</label>
+                    <input
+                        class="w-full px-4 py-3 rounded-lg bg-fortis-dark text-fortis-white border border-gray-700 focus:outline-none focus:border-fortis-yellow"
+                        type="text" id="subject" placeholder="Judul pesan" required>
+                </div>
+
+                <div>
+                    <label class="block mb-2 text-fortis-white font-semibold" for="message">Pesan</label>
+                    <textarea
+                        class="w-full px-4 py-3 rounded-lg bg-fortis-dark text-fortis-white border border-gray-700 focus:outline-none focus:border-fortis-yellow"
+                        id="message" rows="6" placeholder="Tulis pesan Anda..." required></textarea>
+                </div>
+
+                <button type="submit"
+                    class="bg-fortis-yellow text-fortis-dark font-bold py-3 px-6 rounded-lg hover:bg-yellow-500 transition shadow-lg">
+                    Kirim Pesan
+                </button>
+
+            </form>
+        </div>
+    </section>
+
+    <!-- Call to Action / Footer Section -->
+    <section class="bg-fortis-yellow py-20">
+        <div class="container mx-auto px-5 text-center text-fortis-dark">
+            <h2 class="text-4xl font-extrabold mb-4">Butuh Bantuan Cepat?</h2>
+            <p class="mb-6 text-lg leading-relaxed">
+                Hubungi tim kami langsung melalui telepon atau email. Kami siap memberikan solusi pengelasan profesional
+                sesuai kebutuhan Anda.
+            </p>
+            <a href="tel:+62123456789"
+                class="inline-block bg-fortis-dark text-fortis-yellow font-bold py-3 px-8 rounded-lg hover:bg-gray-800 transition shadow-lg mr-4">
+                Telepon Sekarang
+            </a>
+            <a href="mailto:info@fortiswelding.com"
+                class="inline-block bg-fortis-dark text-fortis-yellow font-bold py-3 px-8 rounded-lg hover:bg-gray-800 transition shadow-lg">
+                Email Kami
+            </a>
+        </div>
+    </section>
+    <!-- FOOTER -->
+    <footer class="bg-fortis-black py-20 ">
+        <div class="container mx-auto px-5 grid md:grid-cols-3 gap-8 text-fortis-white">
+
+            <!-- Logo dan Deskripsi -->
+            <div>
+                <div class="flex items-center gap-3 mb-4">
+                    <img src="/img/brand/logo-horizon-yellow.png" alt="logo fortis welding" class="w-[150px]">
+
+                </div>
+                <p class="text-sm leading-relaxed">
+                    Penyedia jasa pengelasan profesional dengan fokus pada kualitas, presisi, dan keselamatan.
+                    Memberikan solusi terbaik untuk kebutuhan konstruksi dan perbaikan Anda.
+                </p>
+            </div>
+
+            <!-- Navigasi Footer -->
+            <div>
+                <h3 class="text-fortis-yellow font-semibold mb-4">Navigasi</h3>
+                <ul>
+                    <li><a href="/" class="hover:text-fortis-yellow transition-colors duration-300">Home</a></li>
+                    <li><a href="/tentang/" class="hover:text-fortis-yellow transition-colors duration-300">Tentang
+                            Kami</a>
+                    </li>
+                    <li><a href="/layanan/" class="hover:text-fortis-yellow transition-colors duration-300">Layanan</a>
+                    </li>
+                    <li><a href="/kontak/" class="hover:text-fortis-yellow transition-colors duration-300">Kontak</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Kontak dan Sosial Media -->
+            <div>
+                <h3 class="text-fortis-yellow font-semibold mb-4">Kontak Kami</h3>
+                <p class="mb-2 flex items-center gap-2">
+                    <i data-lucide="mail" class="w-5 h-5"></i>
+                    <a href="mailto:info@fortiswelding.com"
+                        class="hover:text-fortis-yellow transition-colors duration-300">info@fortiswelding.com</a>
+                </p>
+                <p class="mb-4 flex items-center gap-2">
+                    <i data-lucide="phone" class="w-5 h-5"></i>
+                    <a href="tel:+62123456789" class="hover:text-fortis-yellow transition-colors duration-300">+62 123
+                        456
+                        789</a>
+                </p>
+
+                <div class="flex gap-4">
+                    <a href="#" aria-label="Facebook" class="hover:text-fortis-yellow transition-colors duration-300">
+                        <i data-lucide="facebook" class="w-6 h-6"></i>
+                    </a>
+                    <a href="#" aria-label="Instagram" class="hover:text-fortis-yellow transition-colors duration-300">
+                        <i data-lucide="instagram" class="w-6 h-6"></i>
+                    </a>
+                    <a href="#" aria-label="LinkedIn" class="hover:text-fortis-yellow transition-colors duration-300">
+                        <i data-lucide="linkedin" class="w-6 h-6"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="mt-10 border-t border-gray-800 pt-6 text-center text-gray-500 text-sm">
+            &copy; 2025 Fortis Welding. All rights reserved.
+        </div>
+    </footer>
+    <!-- END FOOTER -->
+    <!-- SCRIPTS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="/js/main.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>FORTIS WELDING - Jasa Las Profesional — Kuat, Presisi, dan Terpercaya</title>
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="/js/tailwind.config.js"></script>
+
+    <!-- Lucide -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- CUSTOM FONTS -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Lexend:wght@300;400;600;700;800&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        .heading {
+            font-family: 'Lexend', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="text-fortis-white">
+    <!-- NAVBAR -->
+    <header class="bg-fortis-black shadow z-50">
+        <div class="container mx-auto px-5 py-5 flex justify-between items-center">
+
+            <!-- LOGO -->
+            <div class="flex items-center gap-3">
+                <img src="/img/brand/logo-horizon-white.png" alt="SAUDARA GEOTEKNIK" class="w-[150px] h-auto">
+            </div>
+
+            <!-- DESKTOP NAV -->
+            <nav class="hidden md:flex items-center gap-6 text-sm font-medium">
+                <a href="/" class="text-fortis-white hover:text-fortis-yellow">Beranda</a>
+                <a href="/tentang/" class="text-fortis-yellow">Tentang</a>
+                <a href="/layanan/" class="text-fortis-white hover:text-fortis-yellow">Layanan</a>
+                <a href="/kontak/" class="text-fortis-white hover:text-fortis-yellow">Kontak</a>
+            </nav>
+
+            <!-- MOBILE BUTTON -->
+            <button id="menu-btn" aria-label="Buka menu navigasi"
+                class="md:hidden flex items-center justify-center w-10 h-10 rounded text-fortis-white hover:text-fortis-yellow">
+                <i data-lucide="menu" class="w-6 h-6"></i>
+            </button>
+        </div>
+
+        <!-- MOBILE MENU -->
+        <div id="mobile-menu" class="hidden md:hidden bg-fortis-black ">
+            <nav class="flex flex-col gap-2 px-6 py-4 text-sm font-medium">
+                <a href="/" class="p-2 rounded text-fortis-white hover:text-fortis-yellow">Beranda</a>
+                <a href="/tentang/" class="p-2 rounded text-fortis-yellow">Tentang Kami</a>
+                <a href="/layanan/" class="p-2 rounded text-fortis-white hover:text-fortis-yellow">Layanan</a>
+                <a href="/kontak/" class="p-2 rounded text-fortis-white hover:text-fortis-yellow">Kontak</a>
+
+            </nav>
+        </div>
+    </header>
+    <!-- END NAVBAR -->
+    <!-- HERO ABOUT -->
+    <section class="bg-fortis-dark mx-auto px-5 py-20">
+        <div class="container mx-auto px-5">
+            <div class="grid md:grid-cols-2 gap-10 items-center">
+                <div>
+                    <h1 class="text-4xl md:text-5xl font-extrabold mb-6">
+                        Tentang <span class="text-fortis-yellow">Kami</span>
+                    </h1>
+
+                    <p class="text-fortis-white leading-relaxed mb-6">
+                        Fortis Welding adalah perusahaan jasa pengelasan profesional yang berfokus
+                        pada kualitas, presisi, dan keamanan. Dengan pengalaman bertahun-tahun,
+                        kami menyediakan solusi pengelasan untuk kebutuhan konstruksi, perbaikan,
+                        hingga proyek industri berskala besar.
+                    </p>
+
+                    <p class="text-fortis-white leading-relaxed">
+                        Kami percaya bahwa hasil terbaik datang dari keahlian tinggi, alat yang tepat,
+                        serta komitmen total terhadap keselamatan kerja.
+                    </p>
+                </div>
+
+                <div class="flex justify-center">
+                    <img src="https://images.unsplash.com/photo-1591180566452-88208818594b?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fHdlbGRpbmclMjBidWlsZGluZ3xlbnwwfHwwfHx8MA%3D%3D" alt="about" class="rounded-lg">
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- END ABOUT -->
+    <!-- VISI MISI -->
+    <section class="bg-fortis-black py-20">
+        <div class="container mx-auto px-5">
+
+            <h2 class="text-3xl font-bold mb-12">Visi & Misi</h2>
+
+            <div class="grid md:grid-cols-3 gap-12">
+
+                <!-- Card 1 -->
+                <div class="text-center">
+                    <div class="flex justify-center mb-4">
+                        <i data-lucide="binoculars" class="w-12 h-12 text-fortis-yellow"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Visi</h3>
+                    <p class="text-fortis-white">
+                        Menjadi penyedia jasa pengelasan terbaik yang dikenal karena kualitas,
+                        keandalan, dan layanan profesional.
+                    </p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="text-center">
+                    <div class="flex justify-center mb-4">
+                        <i data-lucide="target" class="w-12 h-12 text-fortis-yellow"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Misi</h3>
+                    <p class="text-fortis-white">
+                        Memberikan layanan pengelasan dengan standar keamanan tinggi
+                        dan hasil yang presisi untuk semua jenis proyek.
+                    </p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="text-center">
+                    <div class="flex justify-center mb-4">
+                        <i data-lucide="award" class="w-12 h-12 text-fortis-yellow"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Nilai Utama</h3>
+                    <p class="text-fortis-white">
+                        Integritas, kualitas kerja, dan kepuasan pelanggan sebagai prioritas utama.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- END VISI MISI -->
+    <!-- TIM KAMI -->
+    <section class="bg-fortis-dark py-20">
+        <div class="container mx-auto px-5">
+            <h2 class="text-3xl font-bold mb-12">Tim Profesional Kami</h2>
+
+            <div class="grid md:grid-cols-3 gap-12">
+
+                <!-- Person 1 (tanpa identifikasi nyata — aman) -->
+                <div class="bg-fortis-black p-8 rounded-xl">
+                    <i data-lucide="hard-hat" class="w-16 h-16 text-fortis-yellow mb-5"></i>
+                    <h4 class="text-xl font-semibold mb-2">Teknisi Senior</h4>
+                    <p class="text-fortis-white text-sm">
+                        Spesialis dalam pengelasan baja dan konstruksi berat.
+                    </p>
+                </div>
+
+                <div class="bg-fortis-black p-8 rounded-xl">
+                    <i data-lucide="wrench" class="w-16 h-16 text-fortis-yellow mb-5"></i>
+                    <h4 class="text-xl font-semibold mb-2">Ahli Perbaikan</h4>
+                    <p class="text-fortis-white text-sm">
+                        Berpengalaman dalam perbaikan mesin dan struktur logam.
+                    </p>
+                </div>
+
+                <div class="bg-fortis-black p-8 rounded-xl">
+                    <i data-lucide="settings" class="w-16 h-16 text-fortis-yellow mb-5"></i>
+                    <h4 class="text-xl font-semibold mb-2">Quality Control</h4>
+                    <p class="text-fortis-white text-sm">
+                        Memastikan semua hasil pengelasan memenuhi standar keselamatan.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END TIM KAMI -->
+    <!-- FOOTER -->
+    <footer class="bg-fortis-black py-20 ">
+        <div class="container mx-auto px-5 grid md:grid-cols-3 gap-8 text-fortis-white">
+
+            <!-- Logo dan Deskripsi -->
+            <div>
+                <div class="flex items-center gap-3 mb-4">
+                    <img src="/img/brand/logo-horizon-yellow.png" alt="logo fortis welding" class="w-[150px]">
+
+                </div>
+                <p class="text-sm leading-relaxed">
+                    Penyedia jasa pengelasan profesional dengan fokus pada kualitas, presisi, dan keselamatan.
+                    Memberikan solusi terbaik untuk kebutuhan konstruksi dan perbaikan Anda.
+                </p>
+            </div>
+
+            <!-- Navigasi Footer -->
+            <div>
+                <h3 class="text-fortis-yellow font-semibold mb-4">Navigasi</h3>
+                <ul>
+                    <li><a href="/" class="hover:text-fortis-yellow transition-colors duration-300">Home</a></li>
+                    <li><a href="/tentang/" class="hover:text-fortis-yellow transition-colors duration-300">Tentang Kami</a>
+                    </li>
+                    <li><a href="/layanan/" class="hover:text-fortis-yellow transition-colors duration-300">Layanan</a></li>
+                    <li><a href="/kontak/" class="hover:text-fortis-yellow transition-colors duration-300">Kontak</a></li>
+                </ul>
+            </div>
+
+            <!-- Kontak dan Sosial Media -->
+            <div>
+                <h3 class="text-fortis-yellow font-semibold mb-4">Kontak Kami</h3>
+                <p class="mb-2 flex items-center gap-2">
+                    <i data-lucide="mail" class="w-5 h-5"></i>
+                    <a href="mailto:info@fortiswelding.com"
+                        class="hover:text-fortis-yellow transition-colors duration-300">info@fortiswelding.com</a>
+                </p>
+                <p class="mb-4 flex items-center gap-2">
+                    <i data-lucide="phone" class="w-5 h-5"></i>
+                    <a href="tel:+62123456789" class="hover:text-fortis-yellow transition-colors duration-300">+62 123
+                        456
+                        789</a>
+                </p>
+
+                <div class="flex gap-4">
+                    <a href="#" aria-label="Facebook" class="hover:text-fortis-yellow transition-colors duration-300">
+                        <i data-lucide="facebook" class="w-6 h-6"></i>
+                    </a>
+                    <a href="#" aria-label="Instagram" class="hover:text-fortis-yellow transition-colors duration-300">
+                        <i data-lucide="instagram" class="w-6 h-6"></i>
+                    </a>
+                    <a href="#" aria-label="LinkedIn" class="hover:text-fortis-yellow transition-colors duration-300">
+                        <i data-lucide="linkedin" class="w-6 h-6"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="mt-10 border-t border-gray-800 pt-6 text-center text-gray-500 text-sm">
+            &copy; 2025 Fortis Welding. All rights reserved.
+        </div>
+    </footer>
+    <!-- END FOOTER -->
+
+    <!-- SCRIPTS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="/js/main.js"></script>
+    <script>
+        AOS.init();
+        new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            loop: true,
+            autoplay: { delay: 2500 },
+            pagination: { el: ".swiper-pagination" }
+        });
+        lucide.createIcons();
+    </script>
+
+</body>
+
+</html>
