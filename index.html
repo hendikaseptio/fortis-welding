@@ -4,7 +4,89 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png" />
+    <link rel="manifest" href="/img/favicon/site.webmanifest" />
+
+    <!-- Primary Meta Tags -->
     <title>FORTIS WELDING - Jasa Las Profesional — Kuat, Presisi, dan Terpercaya</title>
+    <meta name="title" content="FORTIS WELDING - Jasa Las Profesional — Kuat, Presisi, dan Terpercaya" />
+    <meta name="description"
+        content="FORTIS WELDING menyediakan jasa las profesional untuk pagar, kanopi, railing, gerbang, pintu besi, dan konstruksi metal lainnya. Hasil kuat, rapi, presisi, ditangani tenaga ahli berpengalaman." />
+    <meta name="keywords"
+        content="jasa las, jasa las profesional, las pagar, las kanopi, las besi, bengkel las, las panggilan, fortis welding, las konstruksi, las Bekasi, las Jakarta" />
+    <meta name="language" content="id" />
+    <meta name="author" content="Hendika Septio" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="FORTIS WELDING" />
+    <meta property="og:title" content="FORTIS WELDING - Jasa Las Profesional & Terpercaya" />
+    <meta property="og:description"
+        content="Jasa las profesional: pagar, kanopi, railing, gerbang, konstruksi metal. Hasil kuat, rapi, dan presisi." />
+    <meta property="og:url" content="https://fortis-welding.hendikaseptio.my.id/" />
+    <meta property="og:image" content="https://fortis-welding.hendikaseptio.my.id/assets/fortis-welding-cover.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://fortis-welding.hendikaseptio.my.id/" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="FORTIS WELDING - Jasa Las Profesional & Terpercaya" />
+    <meta name="twitter:description"
+        content="Layanan las berkualitas: pagar, kanopi, railing, gerbang, pintu besi, dan konstruksi metal." />
+    <meta name="twitter:url" content="https://fortis-welding.hendikaseptio.my.id/" />
+    <meta name="twitter:image" content="https://fortis-welding.hendikaseptio.my.id/assets/fortis-welding-cover.jpg" />
+
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "FORTIS WELDING",
+            "url": "https://fortis-welding.hendikaseptio.my.id/",
+            "logo": "https://fortis-welding.hendikaseptio.my.id/assets/logo-fortis.png",
+            "sameAs": [
+                "https://www.facebook.com/",
+                "https://www.instagram.com/"
+            ],
+            "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "+6287719777534",
+                "contactType": "customer service",
+                "areaServed": "ID",
+                "availableLanguage": ["Indonesian"]
+            }
+        }
+    </script>
+
+    <!-- Content Security Policy -->
+    <meta http-equiv="Content-Security-Policy" content="
+        default-src 'self';
+        script-src 'self' https://fortis-welding.hendikaseptio.my.id https://static.cloudflareinsights.com https://unpkg.com https://cdn.tailwindcss.com https://cdn.jsdelivr.net 'unsafe-inline' 'unsafe-eval';
+        style-src 'self' https://unpkg.com https://cdn.jsdelivr.net https://fonts.googleapis.com 'unsafe-inline';
+        img-src 'self' https://cdn.pixabay.com https://fortis-welding.hendikaseptio.my.id https://images.unsplash.com https://plus.unsplash.com/ data:;
+        font-src 'self' https://fonts.gstatic.com data:;
+        connect-src 'self' https://cloudflareinsights.com https://static.cloudflareinsights.com ws://127.0.0.1:5500 https://fortis-welding.hendikaseptio.my.id;
+        object-src 'none';
+        frame-src https://www.google.com/maps/embed;
+        base-uri 'self';
+        form-action 'self';
+    " />
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-628TRXQ29M"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-628TRXQ29M');
+    </script>
 
     <!-- Tailwind -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -12,12 +94,13 @@
 
     <!-- Lucide -->
     <script src="https://unpkg.com/lucide@latest"></script>
-    
+
     <!-- AOS -->
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
 
     <!-- CUSTOM FONTS -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Lexend:wght@300;400;600;700;800&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Lexend:wght@300;400;600;700;800&display=swap"
         rel="stylesheet">
     <style>
         body {
@@ -173,38 +256,29 @@
         <div class="container px-5 py-20 mx-auto">
             <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-2">
                 <div class="space-y-2">
-                    <img data-aos="fade-up" class="w-full h-auto object-cover rounded-lg"
-                        src="/img/photo/welding1.avif"
+                    <img data-aos="fade-up" class="w-full h-auto object-cover rounded-lg" src="/img/photo/welding1.avif"
                         alt="Gallery Masonry Image">
-                    <img data-aos="fade-up" class="w-full h-auto object-cover rounded-lg"
-                        src="/img/photo/welding2.avif"
+                    <img data-aos="fade-up" class="w-full h-auto object-cover rounded-lg" src="/img/photo/welding2.avif"
                         alt="Gallery Masonry Image">
                 </div>
                 <div class="space-y-2">
-                    <img data-aos="fade-up" class="w-full h-auto object-cover rounded-lg"
-                        src="/img/photo/welding3.avif"
+                    <img data-aos="fade-up" class="w-full h-auto object-cover rounded-lg" src="/img/photo/welding3.avif"
                         alt="Gallery Masonry Image">
-                    <img data-aos="fade-up" class="w-full h-auto object-cover rounded-lg"
-                        src="/img/photo/welding4.avif"
+                    <img data-aos="fade-up" class="w-full h-auto object-cover rounded-lg" src="/img/photo/welding4.avif"
                         alt="Gallery Masonry Image">
                 </div>
                 <div class="space-y-2">
-                    <img data-aos="fade-up" class="w-full h-auto object-cover rounded-lg"
-                        src="/img/photo/welding5.avif"
+                    <img data-aos="fade-up" class="w-full h-auto object-cover rounded-lg" src="/img/photo/welding5.avif"
                         alt="Gallery Masonry Image">
-                    <img data-aos="fade-up" class="w-full h-auto object-cover rounded-lg"
-                        src="/img/photo/welding6.avif"
+                    <img data-aos="fade-up" class="w-full h-auto object-cover rounded-lg" src="/img/photo/welding6.avif"
                         alt="Gallery Masonry Image">
-                    <img data-aos="fade-up" class="w-full h-auto object-cover rounded-lg"
-                        src="/img/photo/welding7.avif"
+                    <img data-aos="fade-up" class="w-full h-auto object-cover rounded-lg" src="/img/photo/welding7.avif"
                         alt="Gallery Masonry Image">
                 </div>
                 <div class="space-y-2">
-                    <img data-aos="fade-up" class="w-full h-auto object-cover rounded-lg"
-                        src="/img/photo/welding8.avif"
+                    <img data-aos="fade-up" class="w-full h-auto object-cover rounded-lg" src="/img/photo/welding8.avif"
                         alt="Gallery Masonry Image">
-                    <img data-aos="fade-up" class="w-full h-auto object-cover rounded-lg"
-                        src="/img/photo/welding9.avif"
+                    <img data-aos="fade-up" class="w-full h-auto object-cover rounded-lg" src="/img/photo/welding9.avif"
                         alt="Gallery Masonry Image">
                 </div>
             </div>
@@ -297,4 +371,5 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="/js/main.js"></script>
 </body>
+
 </html>

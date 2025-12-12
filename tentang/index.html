@@ -4,7 +4,93 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>FORTIS WELDING - Jasa Las Profesional — Kuat, Presisi, dan Terpercaya</title>
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png" />
+    <link rel="manifest" href="/img/favicon/site.webmanifest" />
+
+    <!-- Primary Meta Tags -->
+    <title>Tentang Kami - FORTIS WELDING | Profesional, Berpengalaman, dan Terpercaya</title>
+    <meta name="title" content="Tentang Kami - FORTIS WELDING | Profesional dan Terpercaya" />
+    <meta name="description"
+        content="Pelajari profil FORTIS WELDING, penyedia jasa las profesional untuk pagar, kanopi, railing, gerbang, dan konstruksi metal. Mengutamakan kekuatan, presisi, dan hasil rapi dengan tenaga ahli berpengalaman." />
+    <meta name="keywords"
+        content="tentang fortis welding, profil fortis welding, jasa las profesional, bengkel las terpercaya, jasa las Bekasi" />
+    <meta name="language" content="id" />
+    <meta name="author" content="Hendika Septio" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="FORTIS WELDING" />
+    <meta property="og:title" content="Tentang Kami - FORTIS WELDING" />
+    <meta property="og:description"
+        content="Kenali lebih dekat FORTIS WELDING, penyedia jasa las profesional dan terpercaya dengan hasil kuat, rapi, dan presisi." />
+    <meta property="og:url" content="https://fortis-welding.hendikaseptio.my.id/tentang-kami/" />
+    <meta property="og:image" content="https://fortis-welding.hendikaseptio.my.id/assets/fortis-welding-cover.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://fortis-welding.hendikaseptio.my.id/tentang-kami/" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Tentang Kami - FORTIS WELDING" />
+    <meta name="twitter:description"
+        content="Profil dan visi FORTIS WELDING sebagai penyedia jasa las profesional dan terpercaya." />
+    <meta name="twitter:url" content="https://fortis-welding.hendikaseptio.my.id/tentang-kami/" />
+    <meta name="twitter:image" content="https://fortis-welding.hendikaseptio.my.id/assets/fortis-welding-cover.jpg" />
+
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "AboutPage",
+        "name": "Tentang Kami - FORTIS WELDING",
+        "url": "https://fortis-welding.hendikaseptio.my.id/tentang-kami/",
+        "mainEntity": {
+            "@type": "Organization",
+            "name": "FORTIS WELDING",
+            "url": "https://fortis-welding.hendikaseptio.my.id/",
+            "logo": "https://fortis-welding.hendikaseptio.my.id/assets/logo-fortis.png",
+            "sameAs": [
+            "https://www.facebook.com/",
+            "https://www.instagram.com/"
+            ],
+            "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+6287719777534",
+            "contactType": "customer service",
+            "areaServed": "ID",
+            "availableLanguage": ["Indonesian"]
+            }
+        }
+    }
+    </script>
+
+    <!-- Content Security Policy -->
+    <meta http-equiv="Content-Security-Policy" content="
+    default-src 'self';
+    script-src 'self' https://fortis-welding.hendikaseptio.my.id https://static.cloudflareinsights.com https://unpkg.com https://cdn.tailwindcss.com https://cdn.jsdelivr.net 'unsafe-inline' 'unsafe-eval';
+    style-src 'self' https://unpkg.com https://cdn.jsdelivr.net https://fonts.googleapis.com 'unsafe-inline';
+    img-src 'self' https://cdn.pixabay.com https://fortis-welding.hendikaseptio.my.id https://images.unsplash.com https://plus.unsplash.com/ data:;
+    font-src 'self' https://fonts.gstatic.com data:;
+    connect-src 'self' https://cloudflareinsights.com https://static.cloudflareinsights.com ws://127.0.0.1:5500 https://fortis-welding.hendikaseptio.my.id;
+    object-src 'none';
+    frame-src https://www.google.com/maps/embed;
+    base-uri 'self';
+    form-action 'self';
+" />
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-628TRXQ29M"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-628TRXQ29M');
+    </script>
 
     <!-- Tailwind -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -12,11 +98,11 @@
 
     <!-- Lucide -->
     <script src="https://unpkg.com/lucide@latest"></script>
-    
+
     <!-- AOS -->
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
 
-    
+
     <!-- CUSTOM FONTS -->
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Lexend:wght@300;400;600;700;800&display=swap"
@@ -84,7 +170,8 @@
                     </p>
                 </div>
                 <div class="flex justify-center">
-                    <img data-aos="zoom-in" data-aos-delay="400" src="/img/photo/about.avif" alt="about" class="rounded-lg">
+                    <img data-aos="zoom-in" data-aos-delay="400" src="/img/photo/about.avif" alt="about"
+                        class="rounded-lg">
                 </div>
             </div>
         </div>
@@ -179,10 +266,13 @@
                 <h3 class="text-fortis-yellow font-semibold mb-4">Navigasi</h3>
                 <ul>
                     <li><a href="/" class="hover:text-fortis-yellow transition-colors duration-300">Home</a></li>
-                    <li><a href="/tentang/" class="hover:text-fortis-yellow transition-colors duration-300">Tentang Kami</a>
+                    <li><a href="/tentang/" class="hover:text-fortis-yellow transition-colors duration-300">Tentang
+                            Kami</a>
                     </li>
-                    <li><a href="/layanan/" class="hover:text-fortis-yellow transition-colors duration-300">Layanan</a></li>
-                    <li><a href="/kontak/" class="hover:text-fortis-yellow transition-colors duration-300">Kontak</a></li>
+                    <li><a href="/layanan/" class="hover:text-fortis-yellow transition-colors duration-300">Layanan</a>
+                    </li>
+                    <li><a href="/kontak/" class="hover:text-fortis-yellow transition-colors duration-300">Kontak</a>
+                    </li>
                 </ul>
             </div>
             <!-- Kontak dan Sosial Media -->
@@ -230,4 +320,5 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="/js/main.js"></script>
 </body>
+
 </html>
